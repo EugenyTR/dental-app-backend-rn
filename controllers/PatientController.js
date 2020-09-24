@@ -10,7 +10,7 @@ function PatientController() {}
 const create = function (req, res) {
     const errors = validationResult(req);
     const data = {
-        fullName: req.body.fullName,
+        fullname: req.body.fullName,
         phone: req.body.phone,
     };
 
@@ -41,7 +41,7 @@ const update = async function (req, res) {
 
     const errors = validationResult(req);
     const data = {
-        fullName: req.body.fullName,
+        fullname: req.body.fullName,
         phone: req.body.phone,
     };
 

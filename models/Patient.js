@@ -5,7 +5,7 @@ const {
 
 const PatientSchema = new Schema({
     id: String,
-    fullName: String,
+    fullname: String,
     phone: String
 }, {
     timestamps: true

@@ -3,6 +3,11 @@ const {
 } = require('express-validator');
 
 const dayjs = require('dayjs');
+const ruLocale = require('dayjs/locale/es');
+const {
+    groupBy,
+    reduce
+} = require('lodash');
 
 const {
     Appointment,
@@ -164,9 +169,15 @@ const all = function (req, res) {
                 });
             }
 
-            res.status(201).json({
+            res.json({
                 success: true,
-                data: docs
+                data: reduce(groupBy(docs, 'date'), (result, value, key) => {
+                    result = [...result, {
+                        title: key,
+                        data: value
+                    }];
+                    return result;
+                }, []),
             });
         });
 };
