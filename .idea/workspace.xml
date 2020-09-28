@@ -8,8 +8,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hUGUZfI4wxBNFz9WMRqJD1Vke0" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -38,6 +42,7 @@
       <workItem from="1600058280884" duration="3999000" />
       <workItem from="1600064113124" duration="2261000" />
       <workItem from="1600140704841" duration="10133000" />
+      <workItem from="1601256986653" duration="8000" />
     </task>
     <servers />
   </component>
